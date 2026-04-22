@@ -2,6 +2,7 @@ from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 import streamlit as st
 from langchain_core.prompts import PromptTemplate,load_prompt
+api_key = st.secrets["GROQ_API_KEY"]
 load_dotenv()
 engineering_departments = [
     "Computer Science Engineering",
@@ -39,7 +40,7 @@ engineering_departments = [
     "Structural Engineering",
     "Printing and Packaging Engineering",
 ]
-model = ChatGroq(model="openai/gpt-oss-120b")
+model = ChatGroq(model="openai/gpt-oss-120b" , api_key=api_key)
 st.markdown("<h1 style='text-align: center;'>⚙️ Engineering Explorer</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Get insights into different engineering fields 🚀</p>", unsafe_allow_html=True)
 with st.container():
