@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "dept_input",
+        "length_input",
+        "style_input"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nPlease explain the engineering department \"{dept_input}\" with the following specifications:\n\nExplanation Style: {style_input}  \nExplanation Length: {length_input}  \n\n1. Core Overview:\n   - Describe what this engineering field focuses on.\n   - Mention key subjects or domains involved.\n\n2. Applications:\n   - Explain real-world applications and industries where this field is used.\n\n3. Skills Required:\n   - List important technical and soft skills needed.\n\n4. Career Opportunities:\n   - Mention common job roles and career paths.\n\n5. Examples / Analogies:\n   - Use simple, relatable analogies to make concepts easier to understand.\n\nIf certain information is not available, respond with: \"Insufficient information available\" instead of guessing.\n\nEnsure the explanation is clear, structured, and aligned with the provided style and length.\n",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}
